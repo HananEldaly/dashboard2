@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groups Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/groups.css">
+</head>
+<nav class="navbar">
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <!-- <button class="menu-toggle">☰</button> -->
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <div class="logo">
+      <img src="../assets/logo.svg" alt="">
+    </div>
+    <div>
+      <span class="word">Coursenix</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="./teacherDashboard.html">Dashboard</a></li>
+    <li><a href="./courses.html">Courses</a></li>
+    <li><a href="./students.html">Students</a></li>
+    <li><a href="./groups.html">Groups</a></li>
+  </ul>
+  <div class="profile-dropdown">
+    <button class="profile-btn">
+      <img src="../assets/teacher1.svg" alt="Profile" class="profile-image">
+    </button>
+    <div class="dropdown-content">
+      <div class="dropdown-header">
+        <img src="../assets/teacher1.svg" alt="Profile" class="profile-image large">
+        <div>
+          <h4>Mr. Ahmed Hassan</h4>
+        </div>
+      </div>
+      <hr>
+      <a href="#"><i class="fas fa-user"></i> View Profile</a>
+      <a href="#"><i class="fas fa-cog"></i> Settings</a>
+      <hr>
+      <a href="#" class="sign_out"><i class="fas fa-sign-out-alt"></i> Sign-out</a>
+    </div>
+  </div>
+</nav>
+
+<body>
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4" style="color:#2AB5A3;">Teacher Groups</h2>
+
+    <div class="row g-4">
+      <!-- Group 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card group-card">
+          <div class="group-header">Group A</div>
+          <div class="group-body">
+            <p><strong>Students:</strong> 25</p>
+            <p><strong>Subject:</strong> Math</p>
+            <a href="#" class="btn btn-custom w-100">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Group 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card group-card">
+          <div class="group-header">Group B</div>
+          <div class="group-body">
+            <p><strong>Students:</strong> 30</p>
+            <p><strong>Subject:</strong> Science</p>
+            <a href="#" class="btn btn-custom w-100">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Group 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card group-card">
+          <div class="group-header">Group C</div>
+          <div class="group-body">
+            <p><strong>Students:</strong> 28</p>
+            <p><strong>Subject:</strong> English</p>
+            <a href="#" class="btn btn-custom w-100">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../JS/groups.js"></script>
+</body>
+
+</html>
